@@ -7,7 +7,11 @@
     "lodash": "^4.17.4",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
-    "react-sparklines": "^1.7.0"
+    "react-google-maps": "^8.2.0",
+    "react-redux": "^5.0.6",
+    "react-sparklines": "^1.6.0",
+    "redux": "^3.7.2",
+    "redux-promise": "^0.5.3"
   },
   "devDependencies": {
     "react-scripts": "1.0.13"

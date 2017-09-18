@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {Component} from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { fetchWeather } from '../actions/index';
@@ -24,16 +24,18 @@ class SearchBar extends Component{
 
   render(){
     return(
+
       <form onSubmit={this.onFormSubmit}
-      classname='input-group'>
-          <input placeholder='Get an update onyour local five-day forecast' classname='form-control'
+      className='input-group'>
+          <input
+            placeholder='Get an update on your local five-day forecast'
+            className='form-control'
             value={this.state.term}
-            onChange={this.onnputChange}
+            onChange={this.onInputChange}
           />
 
-          <span
-            classnmae='inpuinput-group-btn'>
-            <button type='submit' classname = 'btn btn-secondary'>
+          <span className='input-group-btn'>
+            <button type='submit' className = 'btn btn-secondary'>
               Submit
             </button>
           </span>
