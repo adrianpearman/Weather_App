@@ -1,6 +1,7 @@
 {
   "name": "weather_app",
   "version": "0.1.0",
+  "homepage": "https://adrianpearman.github.io/Weather_App/",
   "private": true,
   "dependencies": {
     "axios": "^0.16.2",
@@ -14,12 +15,15 @@
     "redux-promise": "^0.5.3"
   },
   "devDependencies": {
+    "gh-pages": "^1.0.0",
     "react-scripts": "1.0.13"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "npm run build&&gh-pages -d build"
   }
 }
